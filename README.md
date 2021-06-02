@@ -33,8 +33,8 @@ module.exports = router;
 var express = require('express');  
 var app = express();  
 var wiki = require('./wiki.js');  
-app.use('/wiki', wiki);  
-app.use('/wiki/about', wiki);  
+app.use('/wiki', wiki);  // or app.use('/', wiki);  
+app.use('/wiki/about', wiki);  // or app.use(wiki);  
 app.listen(3000);  
 
 
