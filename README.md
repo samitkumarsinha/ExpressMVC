@@ -10,7 +10,7 @@ module.exports = {
         return data;  
     }  
 }  
-#Controller.js
+#Controller.js  
 var mymodel = require("./model");  
 module.exports = {  
     fetchdata(req, res){  
