@@ -26,6 +26,11 @@ module.exports = {
 var mycontrol = require("./controller");  
 const express = require('express');  
 var router = express.Router();  
+//middleware  
+router.use((req, res, next) =>{  
+    console.log(req.path);  
+    next();  
+})  
 router.get('/', mycontrol.fetchdata);  
 router.get('/about', mycontrol.postdata);  
 module.exports = router;  
