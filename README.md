@@ -30,12 +30,12 @@ router.get('/', mycontrol.fetchdata);
 router.get('/about', mycontrol.postdata);  
 module.exports = router;  
 # app.js  
-var express = require('express');
-var app = express();
-var wiki = require('./wiki.js');
-app.use('/wiki', wiki);
-app.use('/wiki/about', wiki);
-app.listen(3000);
+var express = require('express');  
+var app = express();  
+var wiki = require('./wiki.js');  
+app.use('/wiki', wiki);  
+app.use('/wiki/about', wiki);  
+app.listen(3000);  
 
 
 
