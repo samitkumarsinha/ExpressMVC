@@ -10,3 +10,15 @@ module.exports = {
         return data;  
     }  
 }  
+#Controller.js
+var mymodel = require("./model");  
+module.exports = {  
+    fetchdata(req, res){  
+        var v = mymodel.retval();  
+        res.send(v);  
+    },  
+    postdata(req, res){  
+        var v = mymodel.setval("hello");  
+        res.send(v);  
+    }  
+}  
