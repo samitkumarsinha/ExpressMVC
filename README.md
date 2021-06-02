@@ -22,3 +22,11 @@ module.exports = {
         res.send(v);  
     }  
 }  
+# Wiki.js  
+var mycontrol = require("./controller");  
+const express = require('express');  
+var router = express.Router();  
+router.get('/', mycontrol.fetchdata);  
+router.get('/about', mycontrol.postdata);  
+module.exports = router;  
+
